@@ -1,0 +1,3 @@
+function clean() {
+  carName = "CORSA";
+}
