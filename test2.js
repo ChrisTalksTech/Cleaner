@@ -1,3 +1,0 @@
-function clean() {
-  carName = "CORSA";
-}
