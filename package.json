@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "test.js",
   "scripts": {
-    "start": "server.js","start.js",
+    "start": "server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,8 +13,10 @@
     "clipboardy": "^2.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "html-entities": "^1.2.1",
     "iohook": "^0.5.1",
-    "keypress": "^0.2.1"
+    "keypress": "^0.2.1",
+    "sanitize-html": "^1.20.1"
   },
   "repository": {
     "type": "git",
