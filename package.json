@@ -1,7 +1,6 @@
 {
   "name": "cli",
   "version": "1.0.0",
-  "description": "",
   "main": "test.js",
   "scripts": {
     "start": "start.js",
@@ -16,5 +15,15 @@
     "express": "^4.17.1",
     "iohook": "^0.5.1",
     "keypress": "^0.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisTalksTech/Cleaner.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ChrisTalksTech/Cleaner/issues"
+  },
+  "homepage": "https://github.com/ChrisTalksTech/Cleaner#readme",
+  "description": ""
 }
