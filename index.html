@@ -54,51 +54,7 @@
 <footer class="w3-container w3-black w3-padding-16">
   <p><b>Note:</b> Images must be added manually. Empty &lt;img&gt; tags are preserved. </p>
 </footer>
-
-
-<script>
-
-
-function getInput() {
-  const url = 'http://localhost:3200/post_test';
-  var x = document.getElementById("input").value;
-  //console.log(x);
-
-  fetch(url,{
-    // mode: 'no-cors',
-    method: 'POST',
-    headers:{
-      "content-type":"text/plain"
-    },
-    body: x
-  })
-    .then(res => {
-      console.log(res);
-      if(res.ok) {
-        res.text().then((data) => {
-      //      console.log(data + " was recieved");
-            //THIS PART HANDLES HTML ENTITIES IN-BROWSER
-            data = data.replace(/&/g, '&amp;').replace(/&nbsp;/g, ' ').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-            .replace(/&quot;	/g, '"')
-            .replace(/&apos;/g, "'")
-            .replace(/&cent;/g, '¢')
-            .replace(/&yen;/g, '¥')
-            .replace(/&euro;/g, '€')
-            .replace(/&copy;/g, '©')
-            document.getElementById("displayClean").innerHTML = data;
-        });
-        console.log(x + "was sent");
-
-        return res;
-      } else {
-        throw Error(`Request rejected with status ${res.status}`);
-      }
-    })
-    .catch(console.error)
-
-};
-
-</script>
+<script src="bundle.js"></script>
 <script>
 
 $("#input").keyup(function(){
